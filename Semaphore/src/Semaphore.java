@@ -6,8 +6,9 @@ public class Semaphore {
 	public Semaphore(int init){
 		if(init<0){
 			init=0;
-			this.howManyThread=init;//initialize number of thread
-		}				
+		}
+		this.howManyThread=init;//initialize number of thread
+
 	}
 	
 	public synchronized void down(){
